@@ -139,12 +139,15 @@ SELECT @totalHours;
 CALL CalculateTotalHoursForGame('Minecraft', @totalHours);
 SELECT @totalHours;
 
+-- gets the total hours played by user 1
 CALL CalculateTotalHoursForPlayer('user1', @totalHours);
 SELECT @totalHours;
 
+-- gets the total hours played by user 10
 CALL CalculateTotalHoursForPlayer('user10', @totalHours);
 SELECT @totalHours;
 
+-- returns all the names by Mojang Studios
 SELECT Game.Game_Name
 FROM Game
 WHERE Game.GDev = 'Mojang Studios';
